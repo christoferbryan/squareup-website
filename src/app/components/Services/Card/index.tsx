@@ -11,7 +11,7 @@ const ServicesCard : React.FC<ServicesCardProps> = ({ icon, title, desc }) => {
         <>
             <div className="flex flex-col justify-center bg-zinc-900 w-[350px] px-[30px] py-[30px] gap-y-[25px] border-x border-b border-zinc-600
             lg:w-[426.67px]">
-                <div className="flex gap-x-[15px]">
+                <div className="flex gap-x-[15px] items-center">
                     <Image src={icon} alt="icon" width={58} height={58} />
                     <h2 className="font-semi-bold text-white text-[20px]">{title}</h2>
                 </div>
