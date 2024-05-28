@@ -12,12 +12,12 @@ const Footer : React.FC = () => {
         <>
             <div className="bg-[#191919] z-10 font-DM-sans gap-y-[30px] w-full flex flex-col text-white px-[16px] py-[30px] lg:px-[80px] lg:py-[40px]
             lg:gap-y-[40px]">
-               <div className="flex flex-col gap-y-[30px] items-center lg:flex-row lg:justify-between">
+               <div className="flex flex-col gap-y-[30px] items-center lg:grid lg:grid-cols-2 xl:flex xl:flex-row xl:justify-between">
                     <div className="lg:w-[120px]">
                         <Image src={logo} alt="logo" width={150} height={15} />
                     </div>
                     <hr className="border-[#262626] border-2 w-[355px] lg:hidden" />
-                    <div className="flex flex-col items-center gap-y-[20px] lg:gap-x-[20px] lg:flex-row">
+                    <div className="flex flex-col items-center gap-y-[20px] lg:gap-x-[20px] lg:flex-row ">
                         <ul className="flex font-medium text-[16px] gap-x-[20px]">
                             <li>Home</li>
                             <li>Services</li>
