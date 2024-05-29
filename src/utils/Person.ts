@@ -7,7 +7,7 @@ const PersonData = [
       position: 'CEO of Zap Solutions',
     },
     {
-        header : 'SquareUp has been Instrumental in Transforming our Online Presence.',
+        header : 'Working with SquareUp was a breeze.',
       desc : "Their team's expertise in web development and design resulted in a visually stunning and user-friendly e-commerce platform. Our online sales have skyrocketed, and we couldn't be happier.",
       photo: '/profile-2.svg',
       name: 'Meghan Webb',

@@ -15,7 +15,7 @@ const TestimonyCard : React.FC<TestimonyCardProps> = ({ header, desc, photo, nam
             lg:w-[426.67px]">
                 <div className="flex flex-col text-left gap-y-[20px]">
                     <h2 className="font-medium text-[18px] text-[#D8FF99]">{header}</h2>
-                    <p className="text-[E6E6E6] text-[14px] font-normal">
+                    <p className="text-[#E6E6E6] text-[14px] font-normal">
                         {desc}
                     </p>
                 </div>
