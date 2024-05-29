@@ -8,7 +8,7 @@ const OurServices : React.FC = () => {
         <>
             <div className="bg-[#1A1A1A] flex flex-col items-center">
                 <div className="bg-zinc-900 text-center flex flex-col justify-center items-center w-[350px] h-[190px] px-[16px] py-[50px] gap-y-[6px]
-                border-b border-zinc-600 lg:w-[1280px] lg:h-[280px] lg:gap-y-[10px]">
+                border-b border-zinc-600 lg:w-[1280px] lg:h-[280px] lg:gap-y-[10px] lg:px-[250px] lg:py-[100px]">
                     <h2 className="text-white font-semi-bold text-[28px] lg:text-[38px]">Our Services</h2>
                     <p className="text-white font-normal text-[14px] lg:text-[16px]">
                         Transform your brand with our innovative digital solutions that captivate and engage your audience.
