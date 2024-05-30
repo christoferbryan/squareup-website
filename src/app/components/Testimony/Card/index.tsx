@@ -11,7 +11,7 @@ interface TestimonyCardProps {
 const TestimonyCard : React.FC<TestimonyCardProps> = ({ header, desc, photo, name, position }) => {
     return (
         <>
-            <div className="flex flex-col justify-center bg-zinc-900 w-[350px] px-[25px] py-[40px] gap-y-[25px] border-x border-b border-zinc-600
+            <div className="flex flex-col rounded-md justify-center bg-zinc-900 w-[350px] h-[380px] px-[25px] py-[40px] gap-y-[25px] border-2 border-zinc-600
             lg:w-[426.67px]">
                 <div className="flex flex-col text-left gap-y-[20px]">
                     <h2 className="font-medium text-[18px] text-[#D8FF99]">{header}</h2>

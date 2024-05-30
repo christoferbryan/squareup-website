@@ -1,5 +1,12 @@
+'use client';
 import TestimonyCard from "./Card";
 import PersonData from "@/utils/Person";
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay, EffectCoverflow } from "swiper/modules";
 
 const Testimony : React.FC = () => {
     return (
@@ -12,14 +19,54 @@ const Testimony : React.FC = () => {
                         At SquareUp, we take pride in delivering exceptional digital products and services that drive success for our clients. Here's what some of our satisfied clients have to say about their experience working with us
                     </p>
                 </div>
-                <div className='flex flex-col'>
-                    {
-                        PersonData.map((person, index) => (
-                            <div key={index}>
-                                <TestimonyCard {...person} />
-                            </div>
-                        ))
-                    }
+                <div className='flex gap-8 w-full items-center justify-center py-5 lg:py-10'>
+                    <Swiper
+                        effect={'coverflow'}
+                        loop={true}
+                        grabCursor={true}
+                        centeredSlides={true}
+                        slidesPerView={3}
+                        initialSlide={1}
+                        breakpoints={{
+                            320: {
+                                slidesPerView: 1,
+                            },
+                
+                            768: {
+                                slidesPerView: 2,
+                            },
+
+                            1024: {
+                                slidesPerView: 3,
+                            },
+                        }}
+                        spaceBetween={50}
+                        coverflowEffect={{
+                            rotate: 0,
+                            stretch: 0,
+                            depth: 100,
+                            modifier: 2.5,
+                        }}
+                        pagination={{ el: '.swiper-pagination', clickable: true }}
+                        modules={[ EffectCoverflow, Pagination, Autoplay]}
+                        autoplay={{
+                            delay: 5000,
+                            disableOnInteraction: false,
+                        }}
+
+                        className="w-full"
+                    >       
+                        {PersonData.map((person, index) => (
+                            <SwiperSlide key={index}>
+                                <div className="flex items-center justify-center">
+                                    <TestimonyCard {...person}/>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                        <div className="slider-controller">
+                            <div className="swiper-pagination"></div>
+                        </div> 
+                    </Swiper>
                 </div>
             </div>
         </>
