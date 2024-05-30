@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import OurServices from "./components/Services";
 import Choose from "./components/Choose";
 import Testimony from "./components/Testimony";
+import Faq from "./components/Faq";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <OurServices />
       <Choose />
       <Testimony />
+      <Faq />
     </div>
 
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
