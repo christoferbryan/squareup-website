@@ -4,6 +4,7 @@ import OurServices from "./components/Services";
 import Choose from "./components/Choose";
 import Testimony from "./components/Testimony";
 import Faq from "./components/Faq";
+import Cta from "./components/CTA";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Choose />
       <Testimony />
       <Faq />
+      <Cta />
     </div>
 
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
